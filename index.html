@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Mart</title>
     <!-- DaisyUi CDN-->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,7 +101,7 @@
               </div>
            </div>
            <!--Section Two -->
-            <div class="mt-40 bg-gray-100">
+            <div class="lg:mt-40 bg-gray-100">
               <!-- We design thoughtful Section Two -->
               <img class=" ml-20 pt-10 max-sm:hidden" src="./assets/Vector.png" alt="Vector">
                 <div class="max-w-screen-xl mx-auto px-10 lg:px-28 my-8 mt-10 grid grid-cols-1 lg:grid-cols-2 gap-5">
@@ -201,18 +201,17 @@
                   <button class="bg-green-100 rounded-xl w-72 h-12 font-bold justify-center max-sm:mt-10"><i class="mr-2 fa-solid fa-arrow-right-long"></i>Explore our Latest works</button>
                 </div>
                 <h1 class="font-bold text-5xl text-center mt-5">Our Latest Portfolio</h1>
-                <p class="text-center mt-5">The barn house captivates with its blend of rustic charm and modern,<br>
-                  featuring weathered wood, sleek metal accents.</p>
+                <p class="text-center mt-5">The barn house captivates with its blend of rustic charm and modern,
                   <!-- Grid Function -->
                    <div class="mt-14">
                       <div class="max-sm:flex-col flex gap-4">                            
                           <div class=" border-2 max-sm:flex-col flex w-full lg:w-3/4  border-gray-100 border-solid rounded-xl   p-5">
                               <div>
-                                  <img class="" src="./assets/img1.png" alt="image"> 
+                                  <img class="max-sm:w-full" src="./assets/img1.png" alt="image"> 
                               </div>
                               <div class=" lg:ml-4 w-3/4 max-sm:mt-3">
-                                  <h1 class="text-2xl font-bold">Commercial</h1>
-                                  <p class="mt-3">The barn house captivates with its blend of rustic charm
+                                  <h1 class="text-2xl font-bold ">Commercial</h1>
+                                  <p class="mt-3 max-sm:w-full">The barn house captivates with its blend of rustic charm
                                   and modern. The barn house captivates with its blend of
                                   rustic charm and modern .</p>
                                   <h2 class="text-2xl font-bold mt-2">View Details <i class="text-2xl fa-solid fa-square-arrow-up-right" style="color: #2ce114;"></i></h2>
@@ -253,7 +252,6 @@
                 </div>
               </div>
              </div>
-
              <!-- Read Our Article & News -->
               <div class=" bg-gray-100 py-5">
                 <div class=" lg:mt-24 max-w-screen-xl mx-auto px-10 lg:px-28 my-8"> 
@@ -263,7 +261,7 @@
                     <h1 class="font-bold text-5xl text-center mt-5">Read Our Articles and News</h1>
                     <p class="text-center mt-5">SmartRent's cost, including installing door locks, water sensors and other <br> hardware, ranges from $900 to $1,000 a unit</p>
                     
-                    <div class="mt-9 grid grid-cols-3 gap-5">
+                    <div class="mt-9 grid grid-cols-1 lg:grid-cols-3 gap-5">
                         <div class="bg-white rounded-xl p-5">
                           <img src="./assets/article1.png" alt="img">
                             <div class="flex mt-5 gap-5">
@@ -314,8 +312,37 @@
                         </div>
                     </div>
                  </div>
-              </div>   
+              </div> 
+            <!-- Let s Discuss Next Project -->
 
+             <div class="relative overflow-hidden  bg-cover bg-no-repeat lg:p-12 text-center "
+             style="background-image: url('./assets/bg.jpg'); ">
+             <div class="max-w-screen-xl mx-auto px-10 lg:px-28 lg:py-16">
+              <div class="flex justify-center">
+                <button class="bg-green-100 rounded-xl w-56 h-12 font-bold justify-center max-sm:mt-10"><i class="mr-2 fa-solid fa-arrow-right-long"></i>Let's Connect</button>
+              </div>
+              <h1 class="font-bold text-2xl lg:text-5xl text-center mt-7">Let's Discuss Next Project</h1>
+              <p class="text-center mt-7 max-sm:text-start">Smartrenting is a real estate agency with an online platform for short-term rental <br> and sublet for outbound travelers. Paris, Ile-de-France, France.</p>
+              <!-- form -->
+                <form class="mt-10" action="action_page.php" method="get">
+                   <div class=" lg:flex lg:gap-5 max-md:flex-col">
+                    <input class="p-4 w-1/2 max-sm:w-full rounded-xl" type="text" name="text" placeholder="Full Name*" required>
+                    <input class="p-4 w-1/2 max-sm:w-full rounded-xl max-md:mt-5" type="text" name="text" placeholder="Last Name*" required>
+                   </div>
+                   <div class=" lg:flex gap-5 mt-5">
+                    <input class="p-4 w-1/2  max-sm:w-full rounded-xl" type="text" name="text" placeholder="Phone Number*" required>
+                    <input class="p-4 w-1/2  max-sm:w-full rounded-xl max-md:mt-5" type="text" name="text" placeholder="Email*" required>
+                   </div> <br>
+                   <textarea class="p-2 w-full rounded-xl" placeholder="Write Your Message Here" name="" id="" cols="30" rows="10"></textarea>
+                   <br>
+                   <button class="bg-green-100 rounded-xl w-full h-12 font-bold justify-center mt-5 lg:mt-5 text-2xl ">Send Mail <i class="text-2xl fa-solid fa-square-arrow-up-right" style="color: #070707;"></i></button>
+                </form>
+                
+          </div>
+            </div>
+
+
+            
     </main>
 
     <!-- Footer Section -->
